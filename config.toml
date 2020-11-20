@@ -1,0 +1,43 @@
+baseURL = "http://example.org/"
+languageCode = "zh-tw"
+title = "Chenwei Yang"
+theme= "etch"
+enableInlineShortcodes = true
+
+[params]
+  description = "Your site description"
+  copyright = "Copyright © 2020 Chenwei Yang"
+  highlight = true
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "github"
+    tabWidth = 4
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "posts"
+    title = "posts"
+    url = "/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "about"
+    name = "about"
+    title = "about"
+    url = "/about/"
+    weight = 20
+
+[permalinks]
+  posts = "/:title/"
+
+[markup.goldmark.renderer]
+  # Allows HTML in Markdown
+  unsafe = true
