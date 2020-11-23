@@ -3,6 +3,7 @@ languageCode = "zh-tw"
 title = "Chenwei Yang"
 theme= "etch"
 enableInlineShortcodes = true
+dark= "off"
 
 [params]
   description = "Your site description"
