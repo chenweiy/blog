@@ -1,0 +1,26 @@
+#+setupfile: ./hugo_setup.org
+#+title: Linux 60-Second Analysis
+#+author: Chenwei Yang
+#+hugo_tags: hi test linux
+#+date: <2020-11-24 Tue>
+
+
+
+This checklist can be used for any performance issue, and reflects what I typically execute in the first sixty seconds after logging into a poorly-performing Linux system. [fn:1] 
+
+The tools to run are:
+1. uptime
+2. dmesg | tail
+3. vmstat 1
+4. mpstat -P ALL 1
+5. pidstat 1
+6. iostat -xz 1
+7. free -m
+8. sar -n DEV 1
+9. sar -n TCP,ETCP 1
+10. top
+
+
+* Footnotes
+
+[fn:1] [[https://netflixtechblog.com/linux-performance-analysis-in-60-000-milliseconds-accc10403c55][Linux Performance Analysis in 60,000 Milliseconds]]

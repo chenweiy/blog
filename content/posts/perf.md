@@ -2,7 +2,7 @@
 title = "Perf_event"
 author = ["Chenwei Yang"]
 date = 2020-11-23T00:00:00+08:00
-lastmod = 2020-11-23T18:13:24+08:00
+lastmod = 2020-11-24T13:13:37+08:00
 tags = ["hi", "test", "linux"]
 draft = false
 math = true
