@@ -160,7 +160,7 @@ However, without swap, no more processes could be started - already more than ha
 
 all three demo programs were able to obtain 34 MiB. (Exercise: solve two equations with two unknowns and conclude that main memory was 250 MiB, and the other processes took 166 MiB.)
 
-One can view the currently committed amount of memory in [[id:9251ae76-2061-43b1-8f67-0e5a8b23dd90][/proc/meminfo]], in the field =Committed_AS=.
+One can view the currently committed amount of memory in /proc/meminfo, in the field =Committed_AS=.
 
 * Resource
 

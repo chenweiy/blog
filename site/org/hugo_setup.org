@@ -1,0 +1,6 @@
+#+hugo_base_dir: ..
+#+hugo_section: en/blog
+#+hugo_auto_set_lastmod: t
+#+hugo_custom_front_matter: :author "Chenwei Yang"
+#+hugo_custom_front_matter: :math true
+#+hugo_front_matter_format: yaml

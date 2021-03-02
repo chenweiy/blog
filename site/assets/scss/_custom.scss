@@ -1,0 +1,119 @@
+
+/* HEADER */
+
+.td-navbar {
+  position: fixed !important;
+  width: 100%;
+  padding-bottom: 1rem !important;
+  background: transparent !important;
+  transition: 0.3s;
+
+  .navbar-brand {
+    position: absolute;
+    width: 45px;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("/images/favicon.png");
+  }
+
+  #hamburger {
+    &:focus {
+      outline: none;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .navbar-brand {
+      background-image: url("/images/nav_logo.svg");
+      top: 1.5rem;
+      width: 180px;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.td-navbar-nav-scroll {
+  overflow: visible !important;
+  display: none;
+
+  .navbar-nav {
+    overflow: visible !important;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .nav-item {
+      position: relative;
+      height: 10%;
+
+      .active::after {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        content: "";
+        bottom: -4px;
+        left: 0;
+        background: #fff;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    display: block;
+    margin-top: 3.5rem !important;
+  }
+
+  @media only screen and (min-width: 1075px) {
+    margin-top: 1rem !important;
+  }
+}
+
+// Flip-Nav
+.flip-nav .td-navbar {
+  background-color: white !important;
+  box-shadow: 0 1px 2px $medium-grey;
+
+  .navbar-nav {
+    .nav-item {
+      &.show .nav-link,
+      .nav-link {
+        color: $dark-grey;
+
+        &:hover {
+          color: $medium-grey;
+        }
+      }
+
+      .dropdown {
+        &:hover {
+          color: $medium-grey;
+        }
+      }
+    }
+  }
+
+  .navbar-nav .nav-item .active {
+    color: $dark-grey;
+
+    &::after {
+      background: $dark-grey;
+    }
+  }
+
+  #hamburger:hover {
+    div,
+    &:before,
+    &:after {
+      background-color: $dark-grey;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .navbar-brand {
+      background-image: url("/images/nav_logo2.svg");
+    }
+  }
+}

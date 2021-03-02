@@ -1,8 +1,9 @@
 +++
 title = "Perf_event"
+linkTitle = "Perf event"
 author = ["Chenwei Yang"]
-date = 2020-11-23T00:00:00+08:00
-lastmod = 2020-11-24T13:13:37+08:00
+date = 2020-11-23
+lastmod = 2020-11-24
 tags = ["hi", "test", "linux"]
 draft = false
 math = true
