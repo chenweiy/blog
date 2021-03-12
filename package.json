@@ -1,0 +1,19 @@
+{
+  "name": "chenwei-yang-website",
+  "version": "1.0.0",
+  "description": "Chenwei Yang website",
+  "repository": "chenweiy/blog",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build_code_samples": "./build_code_samples.sh",
+    "develop": "cd site && hugo server",
+    "build": "cross-env HUGO_ENV=production hugo --minify -d ../dist -s site -v",
+    "start": "hugo -d ../dist -s site -vw"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "cross-env": "^7.0.2",
+    "postcss-cli": "^7.1.0",
+    "postcss-import": "^14.0.0"
+  }
+}

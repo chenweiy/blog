@@ -1,13 +1,11 @@
-+++
-title = "Test "
-linkTitle = "First blog"
-author = "Chenwei Yang"
-date = 2020-11-20T00:00:00+08:00
-lastmod = 2020-11-23T18:07:11+08:00
-tags = ["hi", "test"]
-draft = false
-math = true
-+++
+---
+title:  "Test "
+date:   2017-01-09 10:00:01 -0700
+categories:
+  - blog 
+authors:
+  - chenwei
+---
 
 
 ## Donec posuere augue in quam. {#donec-posuere-augue-in-quam-dot}

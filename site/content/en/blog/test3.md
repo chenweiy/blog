@@ -1,12 +1,12 @@
 ---
 title: "Linux 60-Second Analysis"
-author: ["Chenwei Yang"]
-date: 2020-11-24T00:00:00+08:00
-lastmod: 2020-12-26T15:03:20+08:00
-tags: ["hi", "test", "linux"]
-draft: false
-author: "Chenwei Yang"
-math: true
+date:   2020-08-21 00:00:01 -0800
+categories:
+  - blog
+  - python
+  - typing
+authors:
+  - chenwei
 ---
 
 This checklist can be used for any performance issue, and reflects what I typically execute in the first sixty seconds after logging into a poorly-performing Linux system.&nbsp;[^fn:1]

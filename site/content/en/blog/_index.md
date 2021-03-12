@@ -1,9 +1,10 @@
 ---
-title: "Docsy Blog"
-linkTitle: "Blog"
-menu:
-  main:
-    weight: 30
+title: "Chenwei Yang"
+date:   2017-01-09 10:00:01 -0700
+categories:
+  - blog
+authors:
+  - chenwei
 ---
 
 

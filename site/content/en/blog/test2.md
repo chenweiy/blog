@@ -1,12 +1,12 @@
 ---
 title: "Git 更換遠端伺服器倉庫網址URL"
-author: ["Chenwei Yang"]
-date: 2020-11-23T00:00:00+08:00
-lastmod: 2020-12-26T15:03:12+08:00
-tags: ["hi"]
-draft: false
-author: "Chenwei Yang"
-math: true
+date:   2020-08-21 00:00:01 -0800
+categories:
+  - blog
+  - python
+  - typing
+authors: 
+  - chenwei
 ---
 
 ## git switch remote URLs {#git-switch-remote-urls}

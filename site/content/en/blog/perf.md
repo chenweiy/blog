@@ -1,12 +1,12 @@
 ---
 title: "Perf_event"
-author: ["Chenwei Yang"]
-date: 2020-11-23T00:00:00+08:00
-lastmod: 2021-01-01T17:32:18+08:00
-tags: ["hi", "test", "linux"]
-draft: false
-author: "Chenwei Yang"
-math: true
+date:   2020-08-21 00:00:01 -0800
+categories:
+  - blog
+  - python
+  - typing
+authors: 
+  - chenwei
 ---
 
 ## Analyze uvc-gadget {#analyze-uvc-gadget}
@@ -14,7 +14,7 @@ math: true
 
 ### List Events {#list-events}
 
-```text
+```
 # /home/bsp/linux/kernel/stable/tools/perf/perf list
 
 List of pre-defined events (to be used in -e):
@@ -45,7 +45,7 @@ List of pre-defined events (to be used in -e):
 
 ### Count Event {#count-event}
 
-```text
+```
 # /home/bsp/linux/kernel/stable/tools/perf/perf stat ./uvc-gadget -o 0 -d -f 0 -
 i testYUV.yuv
 
@@ -66,7 +66,7 @@ i testYUV.yuv
 
 #### Syscall Counts {#syscall-counts}
 
-```text
+```
 # /home/bsp/linux/kernel/stable/tools/perf/perf stat -e 'raw_syscalls:sys_enter'
  -e 'syscalls:sys_enter_*' ./uvc-gadget -o 0 -d -f 0 -i testYUV.yuv
 
@@ -95,7 +95,7 @@ i testYUV.yuv
 
 ### Capture Stack {#capture-stack}
 
-```text
+```
 # /home/bsp/linux/kernel/stable/tools/perf/perf record -g -e cycles,instructions
 ,L1-dcache-load-misses ./uvc-gadget -o 0 -d -f 0 -i testYUV.yuv
 
@@ -109,7 +109,7 @@ i testYUV.yuv
 
 #### Caller-based Call Graph (Top Down) {#caller-based-call-graph--top-down}
 
-```text
+```
 # /home/bsp/linux/kernel/stable/tools/perf/perf report -g graph,0.5,caller
 # To display the perf.data header info, please use --header/--header-only options.
 #
@@ -153,7 +153,7 @@ i testYUV.yuv
 
 #### Callee-based Call Graph (Bottom Up) {#callee-based-call-graph--bottom-up}
 
-```text
+```
 # /home/bsp/linux/kernel/stable/tools/perf/perf report  --no-children -g graph,0
 .2,callee
 # To display the perf.data header info, please use --header/--header-only options.
@@ -202,7 +202,7 @@ i testYUV.yuv
 
 #### Report perf.data on Ubuntu {#report-perf-dot-data-on-ubuntu}
 
-```text
+```
 sudo perf report -k /path/to/your/vmlinux -g graph,0.1,caller
 sudo perf report -k /path/to/your/vmlinux --no-children -g graph,0.2,callee
 ```
@@ -210,7 +210,7 @@ sudo perf report -k /path/to/your/vmlinux --no-children -g graph,0.2,callee
 
 ### Flame Graph {#flame-graph}
 
-```text
+```
 sudo perf script -k ~/workspace/vatics/bsp/linux/kernel/stable/vmlinux -i perf.data | \
     stackcollapse-perf.pl --all | \
     flamegraph.pl --color=java --hash > flamegraph.svg

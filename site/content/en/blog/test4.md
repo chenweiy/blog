@@ -1,12 +1,12 @@
 ---
 title: "Memory OOM"
-author: ["Chenwei Yang"]
-date: 2020-11-24T00:00:00+08:00
-lastmod: 2020-12-26T15:04:13+08:00
-tags: ["hi", "test", "linux", "memory"]
-draft: false
-author: "Chenwei Yang"
-math: true
+date:   2020-08-21 00:00:01 -0800
+categories:
+  - blog
+  - python
+  - typing
+authors:
+  - chenwei
 ---
 
 <div class="ox-hugo-toc toc">

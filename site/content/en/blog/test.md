@@ -1,12 +1,12 @@
 ---
 title: "Test 測試中"
-author: ["Chenwei Yang"]
-date: 2020-11-20T00:00:00+08:00
-lastmod: 2020-12-26T15:01:31+08:00
-tags: ["hi", "test"]
-draft: false
-author: "Chenwei Yang"
-math: true
+date:   2020-08-21 00:00:01 -0800
+categories:
+  - blog
+  - python
+  - typing
+authors: 
+  - chenwei
 ---
 
 ## Donec posuere augue in quam. {#donec-posuere-augue-in-quam-dot}
